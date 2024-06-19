@@ -2,18 +2,18 @@ import Link from "next/link";
 import styles from "@/styles/navbar.module.css";
 import { RiMovie2Fill } from "react-icons/ri";
 import { FiUser } from "react-icons/fi";
-import { FaSearch } from "react-icons/fa";
+import { IoIosSearch } from "react-icons/io";
 
 function Navbar() {
   return (
     <header className={styles.header}>
       {/* navbar in large */}
-      <div className="d-flex align-items-center">
-        <span className="d-flex">
+      <Link href={'/'} className="d-flex align-items-center">
+        <span className={styles.logo}>
           <RiMovie2Fill />
         </span>
-        <h2>aovis</h2>
-      </div>
+        <h2 className={styles.logoTitle}>aovis</h2>
+      </Link>
 
       <nav className={styles.navbar}>
         <Link href={""} className={styles.navItem}>
@@ -38,11 +38,11 @@ function Navbar() {
 
       <div className="d-flex align-items-center">
         <span className={styles.iconNav}>
-          <FaSearch />
+        <IoIosSearch />
         </span>
-        <span className={styles.iconNav}>
+        <Link href={""} className={styles.iconNav}>
           <FiUser />
-        </span>
+        </Link>
       </div>
     </header>
   );

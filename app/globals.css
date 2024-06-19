@@ -7,3 +7,7 @@
 :root{
   --orange:#d96c2c
 }
+
+a{
+  text-decoration: none!important;
+}

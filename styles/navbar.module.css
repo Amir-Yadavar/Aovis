@@ -24,4 +24,24 @@
 }
 
 .iconNav {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.9rem;
+  cursor: pointer;
+}
+
+.logo {
+  color: var(--orange);
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.logoTitle {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0;
 }
