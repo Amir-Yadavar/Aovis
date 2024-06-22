@@ -1,13 +1,20 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-:root{
-  --orange:#d96c2c
+:root {
+  --orange: #d96c2c;
 }
 
-a{
-  text-decoration: none!important;
+a {
+  text-decoration: none !important;
+}
+
+.headerHome_myLittleSwiper__EMPhu > .swiper-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  backdrop-filter: blur(1px) !important;
 }

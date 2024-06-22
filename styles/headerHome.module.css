@@ -1,0 +1,28 @@
+.myLittleSwiper {
+  width: 50% !important;
+  position: absolute !important;
+  right: 0% !important;
+  bottom: 9% !important;
+  height: 300px !important;
+  padding: 10px !important;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 60px rgba(255, 255, 255, 0.1);
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: fit-content;
+}
+
+.swiperWrapper {
+  width: 215px !important;
+  margin-right: 10px !important;
+  height: 104px !important;
+}
+
+.imgWrapper {
+  width: 100% !important;
+  height: 100% !important;
+}
