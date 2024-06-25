@@ -33,13 +33,13 @@ function Headers() {
         className="mySwiper2"
       >
         <SwiperSlide>
-          <img src="/img/header/banner-01.jpg" />
+          <img src="/img/header/banner-01.jpg" className={styles.imgBanner}/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/img/header/banner-02.jpg" />
+          <img src="/img/header/banner-02.jpg" className={styles.imgBanner}/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/img/header/banner-03.jpg" />
+          <img src="/img/header/banner-03.jpg" className={styles.imgBanner}/>
         </SwiperSlide>
       </Swiper>
       <Swiper
@@ -62,6 +62,9 @@ function Headers() {
           <img src="/img/header/banner-03.jpg" className={styles.imgWrapper}/>
         </SwiperSlide>
       </Swiper>
+      <div className={styles.infoImgBanner}>
+        <h3>Aovis</h3>
+      </div>
     </>
   );
 }
