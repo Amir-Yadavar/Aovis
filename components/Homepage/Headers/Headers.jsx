@@ -13,7 +13,7 @@ import "swiper/css/thumbs";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import { useState } from "react";
 
-import styles from '@/styles/headerHome.module.css'
+import styles from "@/styles/headerHome.module.css";
 
 function Headers() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -27,19 +27,28 @@ function Headers() {
         }}
         loop={true}
         spaceBetween={10}
-       
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Thumbs]}
         className="mySwiper2"
       >
         <SwiperSlide>
-          <img src="/img/header/banner-01.jpg" className={styles.imgBanner}/>
+          <div className={styles.infoImgBanner}>
+            <h3>Aovis</h3>
+            <h2 className={styles.infoImgTitle}>The Witcher</h2>
+            <h2 className={styles.infoImgTitle}>Season 2</h2>
+            <p className={styles.textTitle}>writen and directed by nolan</p>
+            <div className="d-flex align-items-center">
+              <button className={styles.btnWhite}>More Info</button>
+              <button className={styles.btnOrange}>More Info</button>
+            </div>
+          </div>
+          <img src="/img/header/banner-01.jpg" className={styles.imgBanner} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/img/header/banner-02.jpg" className={styles.imgBanner}/>
+          <img src="/img/header/banner-02.jpg" className={styles.imgBanner} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/img/header/banner-03.jpg" className={styles.imgBanner}/>
+          <img src="/img/header/banner-03.jpg" className={styles.imgBanner} />
         </SwiperSlide>
       </Swiper>
       <Swiper
@@ -53,18 +62,15 @@ function Headers() {
         className={styles.myLittleSwiper}
       >
         <SwiperSlide className={styles.swiperWrapper}>
-          <img src="/img/header/banner-01.jpg" className={styles.imgWrapper}/>
+          <img src="/img/header/banner-01.jpg" className={styles.imgWrapper} />
         </SwiperSlide>
         <SwiperSlide className={styles.swiperWrapper}>
-          <img src="/img/header/banner-02.jpg" className={styles.imgWrapper}/>
+          <img src="/img/header/banner-02.jpg" className={styles.imgWrapper} />
         </SwiperSlide>
         <SwiperSlide className={styles.swiperWrapper}>
-          <img src="/img/header/banner-03.jpg" className={styles.imgWrapper}/>
+          <img src="/img/header/banner-03.jpg" className={styles.imgWrapper} />
         </SwiperSlide>
       </Swiper>
-      <div className={styles.infoImgBanner}>
-        <h3>Aovis</h3>
-      </div>
     </>
   );
 }

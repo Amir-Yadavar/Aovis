@@ -2,6 +2,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: grotesk;
+}
+
+@font-face {
+  font-family: grace;
+  src: url(./../public//font/CoveredByYourGrace-Regular.ttf);
+}
+
+
+@font-face {
+  font-family: grotesk;
+  src: url(./../public/font/SpaceGrotesk-VariableFont_wght.ttf);
 }
 
 :root {

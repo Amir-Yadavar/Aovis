@@ -27,20 +27,67 @@
   height: 100% !important;
 }
 
-.imgBanner{
-  filter: brightness(.5);
+.imgBanner {
+  filter: brightness(0.5);
 }
 
-.infoImgBanner{
+.infoImgBanner {
   position: absolute;
   padding: 10px;
   margin: 5px;
   border: 1px solid red;
-  top: 50%;
+  top: 25%;
   left: 10%;
   z-index: 2;
 }
 
-/* .infoImgBanner>h3{
-  font-family: ;
-} */
+.infoImgBanner > h3 {
+  font-family: grace;
+  color: var(--orange);
+  text-align: center;
+}
+
+.infoImgTitle {
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.textTitle {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.btnWhite{
+  padding:15px 10px;
+  margin: 5px;
+  border: 2px solid transparent;
+  outline: none;
+  font-weight: .9rem;
+  width: 200px;
+  background-color: white;
+  transition: .5s all;
+}
+
+.btnWhite:hover{
+  border: 2px solid var(--orange);
+  color: var(--orange);
+}
+
+.btnOrange{
+  padding:15px 10px;
+  margin: 5px;
+  border: 2px solid transparent;
+  outline: none;
+  font-weight: .9rem;
+  width: 200px;
+  background-color: var(--orange);
+  color: white;
+  transition: .5s all;
+}
+
+.btnOrange:hover{
+  border: 2px solid var(--orange);
+  background-color: white;
+  color: black;
+}
