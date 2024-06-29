@@ -15,6 +15,8 @@ import { useState } from "react";
 
 import styles from "@/styles/headerHome.module.css";
 
+import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
+
 function Headers() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
@@ -32,10 +34,17 @@ function Headers() {
         className="mySwiper2"
       >
         <SwiperSlide>
+          <div className={styles.shareSec}>
+            <span>Share</span>
+            <span></span>
+            <span className={styles.iconShareSec}><FaXTwitter /></span>
+            <span className={styles.iconShareSec}><FaFacebookF /></span>
+            <span className={styles.iconShareSec}><FaInstagram /></span>
+          </div>
           <div className={styles.infoImgBanner}>
-            <h3>Aovis</h3>
-            <h2 className={styles.infoImgTitle}>The Witcher</h2>
-            <h2 className={styles.infoImgTitle}>Season 2</h2>
+            <h3>Horror Movie</h3>
+            <h2 className={styles.infoImgTitle}>Wrong Turns</h2>
+            <h2 className={styles.infoImgTitle}>Part 2</h2>
             <p className={styles.textTitle}>writen and directed by nolan</p>
             <div className="d-flex align-items-center">
               <button className={styles.btnWhite}>More Info</button>
@@ -45,9 +54,47 @@ function Headers() {
           <img src="/img/header/banner-01.jpg" className={styles.imgBanner} />
         </SwiperSlide>
         <SwiperSlide>
+        <div className={styles.shareSec}>
+            <span>Share</span>
+            <span></span>
+            <span className={styles.iconShareSec}><FaXTwitter /></span>
+            <span className={styles.iconShareSec}><FaFacebookF /></span>
+            <span className={styles.iconShareSec}><FaInstagram /></span>
+          </div>
+          <div className={styles.infoImgBanner}>
+            <h3>Action Movie</h3>
+            <h2 className={styles.infoImgTitle}>The Witcher</h2>
+            <h2 className={styles.infoImgTitle}>Season 2</h2>
+            <p className={styles.textTitle}>
+              writen and directed by Amir Yadavar
+            </p>
+            <div className="d-flex align-items-center">
+              <button className={styles.btnWhite}>More Info</button>
+              <button className={styles.btnOrange}>More Info</button>
+            </div>
+          </div>
           <img src="/img/header/banner-02.jpg" className={styles.imgBanner} />
         </SwiperSlide>
         <SwiperSlide>
+        <div className={styles.shareSec}>
+            <span>Share</span>
+            <span></span>
+            <span className={styles.iconShareSec}><FaXTwitter /></span>
+            <span className={styles.iconShareSec}><FaFacebookF /></span>
+            <span className={styles.iconShareSec}><FaInstagram /></span>
+          </div>
+          <div className={styles.infoImgBanner}>
+            <h3>Adventure Movie</h3>
+            <h2 className={styles.infoImgTitle}>Love</h2>
+            <h2 className={styles.infoImgTitle}>Nightmare</h2>
+            <p className={styles.textTitle}>
+              writen and directed by Amir Yadavar
+            </p>
+            <div className="d-flex align-items-center">
+              <button className={styles.btnWhite}>More Info</button>
+              <button className={styles.btnOrange}>More Info</button>
+            </div>
+          </div>
           <img src="/img/header/banner-03.jpg" className={styles.imgBanner} />
         </SwiperSlide>
       </Swiper>
