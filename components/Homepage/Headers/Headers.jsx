@@ -34,12 +34,22 @@ function Headers() {
         className="mySwiper2"
       >
         <SwiperSlide>
+          <div className={styles.comingDate}>
+            <span>In theater</span>
+            <span>March 2024</span>
+          </div>
           <div className={styles.shareSec}>
             <span>Share</span>
             <span></span>
-            <span className={styles.iconShareSec}><FaXTwitter /></span>
-            <span className={styles.iconShareSec}><FaFacebookF /></span>
-            <span className={styles.iconShareSec}><FaInstagram /></span>
+            <span className={styles.iconShareSec}>
+              <FaXTwitter />
+            </span>
+            <span className={styles.iconShareSec}>
+              <FaFacebookF />
+            </span>
+            <span className={styles.iconShareSec}>
+              <FaInstagram />
+            </span>
           </div>
           <div className={styles.infoImgBanner}>
             <h3>Horror Movie</h3>
@@ -54,12 +64,22 @@ function Headers() {
           <img src="/img/header/banner-01.jpg" className={styles.imgBanner} />
         </SwiperSlide>
         <SwiperSlide>
-        <div className={styles.shareSec}>
+        <div className={styles.comingDate}>
+            <span>In theater</span>
+            <span>May 2024</span>
+          </div>
+          <div className={styles.shareSec}>
             <span>Share</span>
             <span></span>
-            <span className={styles.iconShareSec}><FaXTwitter /></span>
-            <span className={styles.iconShareSec}><FaFacebookF /></span>
-            <span className={styles.iconShareSec}><FaInstagram /></span>
+            <span className={styles.iconShareSec}>
+              <FaXTwitter />
+            </span>
+            <span className={styles.iconShareSec}>
+              <FaFacebookF />
+            </span>
+            <span className={styles.iconShareSec}>
+              <FaInstagram />
+            </span>
           </div>
           <div className={styles.infoImgBanner}>
             <h3>Action Movie</h3>
@@ -76,12 +96,22 @@ function Headers() {
           <img src="/img/header/banner-02.jpg" className={styles.imgBanner} />
         </SwiperSlide>
         <SwiperSlide>
-        <div className={styles.shareSec}>
+        <div className={styles.comingDate}>
+            <span>In theater</span>
+            <span>April 2024</span>
+          </div>
+          <div className={styles.shareSec}>
             <span>Share</span>
             <span></span>
-            <span className={styles.iconShareSec}><FaXTwitter /></span>
-            <span className={styles.iconShareSec}><FaFacebookF /></span>
-            <span className={styles.iconShareSec}><FaInstagram /></span>
+            <span className={styles.iconShareSec}>
+              <FaXTwitter />
+            </span>
+            <span className={styles.iconShareSec}>
+              <FaFacebookF />
+            </span>
+            <span className={styles.iconShareSec}>
+              <FaInstagram />
+            </span>
           </div>
           <div className={styles.infoImgBanner}>
             <h3>Adventure Movie</h3>
