@@ -156,3 +156,78 @@
   bottom: 0%;
   left: 0%;
 }
+
+@media screen and (max-width: 575px) {
+  .infoImgTitle {
+    font-size: 3rem;
+  }
+
+  .btnWhite {
+    width: 150px;
+  }
+  .btnOrange {
+    width: 150px;
+  }
+
+  .infoImgBanner{
+    top: 35%;
+  }
+
+  .comingDate{
+    right: 50%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .infoImgTitle {
+    font-size: 3rem;
+  }
+
+  .btnWhite {
+    width: 150px;
+  }
+  .btnOrange {
+    width: 150px;
+  }
+
+  .infoImgBanner{
+    top: 35%;
+  }
+
+  .comingDate{
+    right: 50%;
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  .infoImgTitle {
+    font-size: 5rem;
+  }
+  .infoImgBanner{
+    top: 25%;
+  }
+
+  .btnWhite {
+    width: 200px;
+  }
+  .btnOrange {
+    width: 200px;
+  }
+  .comingDate{
+    right: 10%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiperWrapper {
+    width: 180px !important;
+  }
+
+  .comingDate{
+    right: 20%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .swiperWrapper {
+    width: 215px !important;
+  }
+}

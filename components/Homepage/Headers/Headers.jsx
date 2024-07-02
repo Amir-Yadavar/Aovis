@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
 // import required modules
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { FreeMode, Navigation, Thumbs, Autoplay } from "swiper/modules";
 import { useState } from "react";
 
 import styles from "@/styles/headerHome.module.css";
@@ -22,15 +22,24 @@ function Headers() {
 
   return (
     <>
+    <div className="d-none">
+
+    </div>
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
           "--swiper-pagination-color": "#fff",
+          " padding-bottom": "20px;",
+          "border-bottom": "10px dashed",
         }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
         loop={true}
         spaceBetween={10}
         thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Thumbs]}
+        modules={[FreeMode, Thumbs, Autoplay]}
         className="mySwiper2"
       >
         <SwiperSlide>
@@ -64,7 +73,7 @@ function Headers() {
           <img src="/img/header/banner-01.jpg" className={styles.imgBanner} />
         </SwiperSlide>
         <SwiperSlide>
-        <div className={styles.comingDate}>
+          <div className={styles.comingDate}>
             <span>In theater</span>
             <span>May 2024</span>
           </div>
@@ -96,7 +105,7 @@ function Headers() {
           <img src="/img/header/banner-02.jpg" className={styles.imgBanner} />
         </SwiperSlide>
         <SwiperSlide>
-        <div className={styles.comingDate}>
+          <div className={styles.comingDate}>
             <span>In theater</span>
             <span>April 2024</span>
           </div>
@@ -128,26 +137,37 @@ function Headers() {
           <img src="/img/header/banner-03.jpg" className={styles.imgBanner} />
         </SwiperSlide>
       </Swiper>
-      <Swiper
-        onSwiper={setThumbsSwiper}
-        loop={true}
-        spaceBetween={10}
-        slidesPerView={4}
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className={styles.myLittleSwiper}
-      >
-        <SwiperSlide className={styles.swiperWrapper}>
-          <img src="/img/header/banner-01.jpg" className={styles.imgWrapper} />
-        </SwiperSlide>
-        <SwiperSlide className={styles.swiperWrapper}>
-          <img src="/img/header/banner-02.jpg" className={styles.imgWrapper} />
-        </SwiperSlide>
-        <SwiperSlide className={styles.swiperWrapper}>
-          <img src="/img/header/banner-03.jpg" className={styles.imgWrapper} />
-        </SwiperSlide>
-      </Swiper>
+      <div className="d-none d-xl-block">
+        <Swiper
+          onSwiper={setThumbsSwiper}
+          loop={true}
+          spaceBetween={10}
+          slidesPerView={4}
+          freeMode={true}
+          watchSlidesProgress={true}
+          modules={[FreeMode, Navigation, Thumbs]}
+          className={styles.myLittleSwiper}
+        >
+          <SwiperSlide className={styles.swiperWrapper}>
+            <img
+              src="/img/header/banner-01.jpg"
+              className={styles.imgWrapper}
+            />
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperWrapper}>
+            <img
+              src="/img/header/banner-02.jpg"
+              className={styles.imgWrapper}
+            />
+          </SwiperSlide>
+          <SwiperSlide className={styles.swiperWrapper}>
+            <img
+              src="/img/header/banner-03.jpg"
+              className={styles.imgWrapper}
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </>
   );
 }
