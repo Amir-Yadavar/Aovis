@@ -32,10 +32,10 @@ function Headers() {
           " padding-bottom": "20px;",
           "border-bottom": "10px dashed",
         }}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         loop={true}
         spaceBetween={10}
         thumbs={{ swiper: thumbsSwiper }}
