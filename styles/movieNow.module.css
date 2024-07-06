@@ -1,0 +1,7 @@
+.containerMovieNow{
+    min-height: 100vh;
+    background: url(./../public/img/content.png) no-repeat center;
+    background-size: cover;
+    opacity: 0.03;
+
+}
