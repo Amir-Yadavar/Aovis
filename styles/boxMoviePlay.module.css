@@ -1,0 +1,78 @@
+.container {
+  width: 275px !important;
+  height: 390px !important;
+  overflow: hidden !important;
+  position: relative;
+  transition: 0.5s all;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 5px;
+}
+.img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  transition: 0.5s all;
+  
+}
+
+.container > figure::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 65%);
+}
+
+.container:hover {
+  outline: 5px solid var(--orange);
+}
+
+.container:hover.container > figure > img {
+  transform: scale(1.1);
+}
+
+.container > figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  z-index: -1;
+  transition: 0.5s all;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+}
+.infoBox > h3 {
+  font-size: 1.3rem;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+}
+.infoBox > h4 {
+  font-size: 0.8rem;
+  color: whitesmoke;
+  padding: 5px;
+}
+.infoBox > button {
+  font-size: 0.8rem;
+  color: black;
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 100px;
+  transition: .5s all;
+}
+
+.container:hover .infoBox > button{
+    background-color: var(--orange);
+    color: white;
+}

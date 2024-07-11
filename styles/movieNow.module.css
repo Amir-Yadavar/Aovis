@@ -13,6 +13,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 
 .boxSecImg {
@@ -77,4 +78,42 @@
 
 .containerBoxSec:hover .boxSecImg {
   transform: scale(1.1);
+}
+
+.logo {
+  color: var(--orange);
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.titleContent1h4{
+  font-size: 1rem;
+  color: #7A7A7A;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+}
+.titleContent1h3{
+  font-size: 3rem;
+  color: #000000;
+  font-weight: bold;
+  padding:5px 10px;
+  margin: 5px;
+}
+
+@media screen and (max-width:575px) {
+  .titleContent1h3{
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width:576px) {
+  .titleContent1h3{
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width:768px) {
+  .titleContent1h3{
+    font-size: 3rem;
+  }
 }
