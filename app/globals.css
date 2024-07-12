@@ -30,3 +30,44 @@ a {
   justify-content: center !important;
   backdrop-filter: blur(1px) !important;
 }
+
+.logo {
+  color: var(--orange);
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.titleLogo{
+  font-size: 1rem;
+  color: #7A7A7A;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+}
+
+.textLogo{
+  font-size: 3rem;
+  color: #000000;
+  font-weight: bold;
+  padding:5px 10px;
+  margin: 5px;
+}
+
+
+@media screen and (max-width:575px) {
+  .textLogo{
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width:576px) {
+  .textLogo{
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width:768px) {
+  .textLogo{
+    font-size: 3rem;
+  }
+}
