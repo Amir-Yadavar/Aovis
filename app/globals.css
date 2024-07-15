@@ -55,6 +55,17 @@ a {
   margin: 5px;
 }
 
+.containerSwiper {
+  position: relative !important;
+}
+
+.littlePosition {
+  position: absolute;
+  right: 0%;
+  bottom: 3%;
+  width: 100%;
+}
+
 
 @media screen and (max-width:575px) {
   .textLogo{
@@ -69,5 +80,14 @@ a {
 @media screen and (min-width:768px) {
   .textLogo{
     font-size: 3rem;
+  }
+}
+@media screen and (min-width:1900px) {
+  .containerExtra{
+    max-width: 1320px;
+    padding-right: calc(var(--bs-gutter-x)* 0.5);
+    padding-left: calc(var(--bs-gutter-x)* 0.5);
+    margin-right: auto;
+    margin-left: auto;
   }
 }

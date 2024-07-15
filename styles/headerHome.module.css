@@ -2,11 +2,12 @@
   width: 50% !important;
   position: absolute !important;
   right: 0% !important;
-  bottom: 9% !important;
+  bottom: 0% !important;
   height: 300px !important;
   padding: 10px !important;
   background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 0px 10px 60px rgba(255, 255, 255, 0.1);
+  z-index: 2 !important;
 }
 
 .swiper-wrapper {
@@ -157,6 +158,8 @@
   left: 0%;
 }
 
+
+
 @media screen and (max-width: 575px) {
   .infoImgTitle {
     font-size: 3rem;
@@ -169,11 +172,11 @@
     width: 150px;
   }
 
-  .infoImgBanner{
+  .infoImgBanner {
     top: 35%;
   }
 
-  .comingDate{
+  .comingDate {
     right: 50%;
   }
 }
@@ -189,21 +192,20 @@
     width: 150px;
   }
 
-  .infoImgBanner{
+  .infoImgBanner {
     top: 35%;
   }
 
-  .comingDate{
+  .comingDate {
     right: 50%;
   }
 }
 
-
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .infoImgTitle {
     font-size: 5rem;
   }
-  .infoImgBanner{
+  .infoImgBanner {
     top: 25%;
   }
 
@@ -213,7 +215,7 @@
   .btnOrange {
     width: 200px;
   }
-  .comingDate{
+  .comingDate {
     right: 10%;
   }
 }
@@ -222,7 +224,7 @@
     width: 180px !important;
   }
 
-  .comingDate{
+  .comingDate {
     right: 20%;
   }
 }

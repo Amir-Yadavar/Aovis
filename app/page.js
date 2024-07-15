@@ -6,7 +6,7 @@ import MovieNow from "@/components/Homepage/MovieNow/MovieNow";
 
 export default function Home() {
   return (
-    <section>
+    <section className="containerExtra">
       <Headers />
       <MovieNow/>
       <CheckoutMovies/>
