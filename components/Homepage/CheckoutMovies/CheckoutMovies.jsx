@@ -1,3 +1,4 @@
+import BoxCheckoutMovies from "@/module/BoxCheckoutMovies/BoxCheckoutMovies";
 import styles from "@/styles/checkoutMovies.module.css";
 import { RiMovie2Fill } from "react-icons/ri";
 function CheckoutMovies() {
@@ -19,6 +20,10 @@ function CheckoutMovies() {
               gravida ,<br /> volutpat quam eget, consequat elit.
             </p>
           </div>
+        </div>
+
+        <div className="d-flex align-items-center">
+          <BoxCheckoutMovies />
         </div>
       </div>
     </section>
