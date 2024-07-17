@@ -6,12 +6,13 @@ import { RiMovie2Fill } from "react-icons/ri";
 import { FiUser } from "react-icons/fi";
 import { IoIosSearch } from "react-icons/io";
 import { CgMenuGridO } from "react-icons/cg";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Navbar() {
   const [isShowNavMob, setIsShowNavMob] = useState(false);
 
   const navMobConRef = useRef();
+  const headerRef = useRef();
 
   // toggleNavMobHandler
   const toggleNavMobHandler = () => {
@@ -21,13 +22,23 @@ function Navbar() {
   };
 
   // containerNavClickHandler
-  const containerNavClickHandler = ()=>{
-    setIsShowNavMob(false)
+  const containerNavClickHandler = () => {
+    setIsShowNavMob(false);
     navMobConRef.current.style.transform = "translateX(-100%)";
-  }
+  };
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        headerRef.current.style.backgroundColor = "black";
+      }
+      if ((window.pageYOffset < 300)) {
+        headerRef.current.style.backgroundColor = "transparent";
+      }
+    });
+  }, []);
   return (
-    <header className={styles.header}>
+    <header className={styles.header} ref={headerRef}>
       <Link href={"/"} className="d-flex align-items-center">
         <span className={styles.logo}>
           <RiMovie2Fill />
@@ -60,28 +71,32 @@ function Navbar() {
       </div>
 
       {/* navbar in mobile */}
-      <div className={styles.navMobContainer} ref={navMobConRef} onClick={containerNavClickHandler}>
+      <div
+        className={styles.navMobContainer}
+        ref={navMobConRef}
+        onClick={containerNavClickHandler}
+      >
         <div>
-        <nav className={styles.navbarMob}>
-          <Link href={""} className={styles.navItem}>
-            Home
-          </Link>
-          <Link href={""} className={styles.navItem}>
-            Movies
-          </Link>
-          <Link href={""} className={styles.navItem}>
-            Events
-          </Link>
-          <Link href={""} className={styles.navItem}>
-            Pages
-          </Link>
-          <Link href={""} className={styles.navItem}>
-            News
-          </Link>
-          <Link href={""} className={styles.navItem}>
-            Contact
-          </Link>
-        </nav>
+          <nav className={styles.navbarMob}>
+            <Link href={""} className={styles.navItem}>
+              Home
+            </Link>
+            <Link href={""} className={styles.navItem}>
+              Movies
+            </Link>
+            <Link href={""} className={styles.navItem}>
+              Events
+            </Link>
+            <Link href={""} className={styles.navItem}>
+              Pages
+            </Link>
+            <Link href={""} className={styles.navItem}>
+              News
+            </Link>
+            <Link href={""} className={styles.navItem}>
+              Contact
+            </Link>
+          </nav>
         </div>
       </div>
 

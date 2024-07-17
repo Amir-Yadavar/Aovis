@@ -22,8 +22,25 @@ function CheckoutMovies() {
           </div>
         </div>
 
-        <div className="d-flex align-items-center">
-          <BoxCheckoutMovies />
+        <div className="d-flex align-items-center justify-content-around flex-wrap">
+          <BoxCheckoutMovies
+            img="/img/header/movie-image1.jpg"
+            title="The Way Of Water"
+            category="Adventure , Crime"
+            min="120"
+          />
+          <BoxCheckoutMovies
+            img="/img/header/banner-02.jpg"
+            title="The Witcher Season 2"
+            category="Action"
+            min="60"
+          />
+          <BoxCheckoutMovies
+            img="/img/header/banner-01.jpg"
+            title="Wrong Turns Part 2"
+            category="Horror"
+            min="110"
+          />
         </div>
       </div>
     </section>
