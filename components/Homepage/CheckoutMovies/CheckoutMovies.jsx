@@ -108,6 +108,8 @@ function CheckoutMovies() {
             />
           </div>
         </div>
+
+        <div className="d-flex justify-content-center align-items-center"></div>
       </div>
     </section>
   );
