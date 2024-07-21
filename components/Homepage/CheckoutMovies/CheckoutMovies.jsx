@@ -109,7 +109,13 @@ function CheckoutMovies() {
           </div>
         </div>
 
-        <div className="d-flex justify-content-center align-items-center"></div>
+        <div className="d-flex align-items-center justify-content-center">
+          <div className={styles.boxExplore}>
+            <span>23,000 +</span>
+            <p>more comedy & horror movies you can explore</p>
+            <button>Explore Now</button>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -16,3 +16,37 @@
   left: 0;
   z-index: -1;
 }
+
+.boxExplore {
+  padding: 10px;
+  margin: 40px 10px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+.boxExplore > span {
+  font-weight: bold;
+  color: var(--orange);
+  padding: 0 10px;
+}
+.boxExplore > p {
+  padding: 0 10px;
+  margin-bottom: 0;
+  color: #909090;
+  font-size: 1rem;
+  margin: 5px;
+}
+.boxExplore > button {
+  padding: 7px 20px;
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  outline: none;
+  margin: 0 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
