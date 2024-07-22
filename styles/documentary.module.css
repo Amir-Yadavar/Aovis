@@ -1,0 +1,6 @@
+.container {
+  width: 100%;
+  min-height: 70vh;
+  background: url(/img/content3/background.jpg) no-repeat center;
+  background-size: cover;
+}
