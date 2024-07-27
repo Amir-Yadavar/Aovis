@@ -3,4 +3,7 @@
   min-height: 70vh;
   background: url(/img/content3/background.jpg) no-repeat center;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -66,6 +66,10 @@ a {
   width: 100%;
 }
 
+.containerAwards>img{
+  filter: brightness(.5);
+}
+
 
 @media screen and (max-width:575px) {
   .textLogo{
