@@ -39,4 +39,15 @@
   font-size: 2rem;
   margin: 20px;
   outline: 20px solid rgba(0, 0, 0, 0.333);
+  transition: .5s all;
+  animation: playBtn 1s ease-in  alternate infinite ;
+  cursor: pointer;
+}
+@keyframes playBtn {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.1);
+  }
 }
