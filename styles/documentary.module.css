@@ -22,14 +22,14 @@
 .textTrailer {
   font-family: grace;
   color: white;
-  font-size: 2.5rem;
+  font-size: 1rem;
   padding: 10px;
   margin: 5px;
 }
 
 .btnPlay {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 50px;
   background-color: var(--orange);
   color: white;
@@ -49,5 +49,15 @@
   }
   100%{
     transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width:768px) {
+  .btnPlay {
+    width: 100px;
+    height: 100px;
+  }
+  .textTrailer{
+    font-size: 2.5rem;
   }
 }
