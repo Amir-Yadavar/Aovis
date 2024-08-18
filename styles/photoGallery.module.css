@@ -1,13 +1,22 @@
 .topSec {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 20px;
   background: url(/img/content4/bg-ticket-decoration.png) center no-repeat;
   background-size: cover;
   background-color: var(--orange);
+  height: 150px;
+  position: relative;
+}
+
+.divBackImg{
+  background: url(/img/content4/bg-ticket-decoration.png) center no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
   opacity: 0.1;
-  /* mix-blend-mode: screen; */
+  mix-blend-mode: screen;
 }
 
 .topSec>h3{
